@@ -2,8 +2,19 @@
 layout: default
 ---
 
+
+
+
+<div id="menu">
+  <h3>Menu</h3>
+  <a href="/experiments">Experimentos</a>
+  <a href="/articulos">Articulos</a>
+</div>
+
 <div class="posts">
   {% for post in site.posts %}
+	
+
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
