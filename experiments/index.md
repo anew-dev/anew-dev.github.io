@@ -37,6 +37,24 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </li>
 </ul>
 
+<div id="js-fadeInElement" class="fade-in-element">
+  This box will fade in when it's <b>300px above the bottom</b> of the window.
+  <br>
+  And disappear as it goes <b>below the bottom</b> of the window.
+  <br>
+  If JavaScript is disabled, it will still show up.
+</div>
+
+<div class="hover-tile-outer">
+  <div class="hover-tile-container">
+    <div class="hover-tile hover-tile-visible"></div>
+    <div class="hover-tile hover-tile-hidden">
+      <h4>Hidden Copy</h4>
+      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
+    </div>
+  </div>
+</div>
+
 <ul class="accordion-tabs">
   <li class="tab-header-and-content">
     <a href="javascript:void(0)" class="is-active tab-link">Tab Item</a>

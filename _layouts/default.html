@@ -35,21 +35,58 @@
       </div>
     </div>
 
+    <button type="button" class="js-menu-trigger sliding-panel-button">
+      expand
+    </button>
+
+    <nav class="js-menu sliding-panel-content">
+      <ul>
+        <li><a href="/experiments">Experimentos</a></li>
+        <li><a href="/articulos">Articulos</a></li>
+      </ul>
+    </nav>
+
+    <div class="js-menu-screen sliding-panel-fade-screen"></div>
+
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
+
+
+    <footer class="footer" role="contentinfo">
+      <div class="footer-logo">
+        {% include svg-icons.html %}
       </div>
-    </div>
+      <div class="footer-links">
+        <ul>
+          <li><h3>Content</h3></li>
+          <li><a href="javascript:void(0)">About</a></li>
+          <li><a href="javascript:void(0)">Contact</a></li>
+          <li><a href="javascript:void(0)">Products</a></li>
+        </ul>
+        <ul>
+          <li><h3>Follow Us</h3></li>
+          <li><a href="javascript:void(0)">Facebook</a></li>
+          <li><a href="javascript:void(0)">Twitter</a></li>
+          <li><a href="javascript:void(0)">YouTube</a></li>
+        </ul>
+        <ul>
+          <li><h3>Legal</h3></li>
+          <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+          <li><a href="javascript:void(0)">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <hr>
+
+    </footer>
 
     {% include accordion.html %}
     {% include tabs.html %}
     {% include scroll-to.html %}
+    {% include off-canvas.html %}
+    {% include fade-in.html %}
     {% include analytics.html %}
   </body>
 </html>
